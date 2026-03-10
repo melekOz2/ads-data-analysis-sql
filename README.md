@@ -51,6 +51,8 @@ GROUP BY is used to aggregate performance metrics by date and media source.
   ## Example Query
 
 ```sql
+-- Combine Facebook and Google Ads data using CTE and UNION
+
 WITH ads_data AS (
     SELECT ad_date,
            'Facebook Ads' AS media_source,
