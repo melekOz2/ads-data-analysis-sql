@@ -45,3 +45,7 @@ GROUP BY is used to aggregate performance metrics by date and media source.
 - Total Impressions
 - Total Clicks
 - Total Conversion Value
+
+ Author
+
+Melike Emine özyavuz
