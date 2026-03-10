@@ -74,6 +74,7 @@ WITH ads_data AS (
            value
     FROM google_ads_basic_daily
 )
+    -- Aggregate metrics by date and advertising platform
 
 SELECT
     ad_date,
