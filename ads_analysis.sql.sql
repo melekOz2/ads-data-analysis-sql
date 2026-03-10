@@ -1,3 +1,5 @@
+-- Combine Facebook and Google Ads data using CTE and UNION
+
 WITH ads_data as -- with ile iki tabloyu birleştirdik 
 (
     SELECT
@@ -24,6 +26,9 @@ WITH ads_data as -- with ile iki tabloyu birleştirdik
         value
     FROM google_ads_basic_daily
 )
+    
+    -- Aggregate metrics by date and advertising platform
+
 SELECT
     ad_date,
     media_source,
@@ -36,4 +41,5 @@ SELECT
 FROM ads_data
 GROUP BY ad_date, media_source   -- burada önce tahie göre ardından satın alınan kaynağa göre grupla dedik
 ORDER BY ad_date, media_source;  -- oluşturduğun verileri düzenli bir şekilde ver dedik 
+
 
