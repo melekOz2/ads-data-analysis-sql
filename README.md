@@ -62,7 +62,7 @@ WITH ads_data AS (
            value
     FROM facebook_ads_basic_daily
 
-    UNION ALL
+    UNION 
 
     SELECT ad_date,
            'Google Ads' AS media_source,
