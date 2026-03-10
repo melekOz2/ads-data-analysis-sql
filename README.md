@@ -86,6 +86,5 @@ FROM ads_data
 GROUP BY ad_date, media_source
 ORDER BY ad_date, media_source;
 
- Author
-
-Melike Emine özyavuz
+## Author
+Melike Emine Özyavuz
